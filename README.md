@@ -1,27 +1,34 @@
-# PrimeraAppAngular
+### Directivas
+Feature clave de Angular 
+Permite extender funcionalidad del HTML
+Hay 3 tipos :
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Directivas de Componente -> Es la propia Clase que tiene un template.html,
+nos permite manejar logica.
+Es un elemento html con funcionalidad extendida.
 
-## Development server
+Directivas de Atributo -> Permite manejar el cambio de apariencia o comportamiento de algún elemento particular del DOM. 
+Se utilizan como atributos de un elemento HTML.
+ngClass(clases css), ngStyle(estilos en linea), ngModel(forms)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ngClass -> debe devolver el nombre de una clase.
+nos permite cambiar de forma dinámica, basado en cualquier lógica de javascript.
 
-## Code scaffolding
+ngStyle-> devuelve lo mismo pero con estilos en linea .
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ngModel-> permite anexar una variable a un elemento de input para poder controlar el formulario.
 
-## Build
+Directivas Estructurales -> 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Alteran la estructura del DOM, agregando elementos, quitan o los ocultan , tienen prefijo *
+y se agregan como un atributo del elemento
 
-## Running unit tests
+*ngIf -> Se refiere a renderizar el elemento que contiene siempre que se cumpla la condición,
+tener en cuenta los valores truthy y falsy
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*ngFor -> similar al for loop para iterar -> 
+duplica el elemento que lo contiene 
 
-## Running end-to-end tests
+*ngTemplateOutlet -> Es un div que no existe hasta tanto no se llame.
+Permite renderizar templates 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

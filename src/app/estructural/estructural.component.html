@@ -1,0 +1,14 @@
+
+
+<div  class="error" *ngIf="isError">
+    <p>Mensaje de error</p>
+</div>
+
+<input type="button" value="Cambiar" (click)="changeResponse()">
+
+<ul>
+    <li *ngFor="let personName of names ">{{personName.name}}  {{personName.edad}}</li>
+</ul>
+
+<ng-template #noDisponible> <p>Contenido no Disponible</p></ng-template>
+<ng-container *ngTemplateOutlet="isError ? noDisponible : null"> </ng-container>

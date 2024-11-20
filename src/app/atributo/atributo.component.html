@@ -1,0 +1,8 @@
+<p [ngClass]="{'info': messageType === 'info','error': messageType === 'error'}">{{messageType == 'info'? 'Exito!' : 'Error'}}</p>
+
+
+<p [ngStyle]="{'background-color': messageType === 'info' ? 'green' : 'red'}">Msj con *ngStyle</p>
+
+<input type="text" [(ngModel)]="inputValue">
+
+<h3>Valor Actual : {{inputValue}}</h3>

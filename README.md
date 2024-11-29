@@ -32,3 +32,5 @@ duplica el elemento que lo contiene
 *ngTemplateOutlet -> Es un div que no existe hasta tanto no se llame.
 Permite renderizar templates 
 
+
+un Pipe es una característica que permite transformar y formatear datos en la plantilla HTML de una manera sencilla y reutilizable. Las Pipes son una herramienta poderosa que facilita la manipulación y presentación de datos en la interfaz de usuario

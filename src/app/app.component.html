@@ -8,3 +8,16 @@
 <h2>Estructurales(*ngIf,*ngSwitch,*ngFor,*ifElse)</h2>
 
 <app-estructural></app-estructural>
+
+
+<!-- un Pipe es una característica que permite transformar y formatear datos en la plantilla HTML de una manera sencilla y reutilizable. Las Pipes son una herramienta poderosa que facilita la manipulación y presentación de datos en la interfaz de usuario. -->
+<h2>Pipes,</h2>
+
+<h4>{{title | uppercase }}</h4>
+
+<h4>{{title | lowercase }}</h4>
+{{date}}
+<h4>{{ date | date }}</h4>
+
+<h4>{{estado | estados}}</h4> 
+<button (click)="toogleState()">Cambiar estado operación.</button>
